@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSpotActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_blur">
+
+    <fragment android:id="@+id/autocomplete_fragment"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/hotel"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/hotel"
+            android:background="@drawable/roundcorner"/>
+
+        <ImageButton
+            android:id="@+id/restaurant"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/restaurant"
+            android:background="@drawable/roundcorner"
+            android:layout_marginStart="20dp"/>
+
+        <ImageButton
+            android:id="@+id/scenic"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/scenic"
+            android:background="@drawable/roundcorner"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/add_spot_recyclerview"
+        tools:listitem="@layout/recommendation_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+
+
+
+

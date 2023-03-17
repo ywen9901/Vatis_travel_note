@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ShareIgOptionsFragment"
+    android:background="@drawable/background_blur">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="75sp"
+            android:padding="16sp"
+            android:background="@null">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/share_bar_container">
+
+                <ImageButton
+                    android:id="@+id/share_ig_select_back_button"
+                    android:layout_width="48sp"
+                    android:layout_height="48sp"
+                    android:background="@null"
+                    android:src="@drawable/ic_baseline_arrow_back_24" />
+
+                <TextView
+                    android:id="@+id/share_ig_select_next_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="4sp"
+                    android:text="NEXT"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="偏好的風格"
+            android:textSize="36sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100sp"
+            android:layout_marginBottom="20sp"/>
+        <Spinner
+            android:id="@+id/share_ig_select_preference_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:entries="@array/ig_preferences"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="希望限時動態包含"
+            android:textSize="36sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="20sp" />
+        <Spinner
+            android:id="@+id/share_ig_select_component_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:entries="@array/ig_components"/>
+
+
+
+    </LinearLayout>
+</FrameLayout>

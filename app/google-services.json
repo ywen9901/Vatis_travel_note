@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "279176524141",
+    "firebase_url": "https://journote-a1641-default-rtdb.firebaseio.com",
+    "project_id": "journote-a1641",
+    "storage_bucket": "journote-a1641.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279176524141:android:ad3aff8a60c733016d2a64",
+        "android_client_info": {
+          "package_name": "com.example.vatis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279176524141-v8862nofau6e4d56ts77tckd2il5tjhq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA_GhQOd3Kr7u5jNhN5tBxJ7w9uRQUhcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279176524141-v8862nofau6e4d56ts77tckd2il5tjhq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

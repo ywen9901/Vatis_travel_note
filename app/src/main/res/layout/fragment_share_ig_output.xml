@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ShareIgOutputFragment"
+    android:background="@drawable/background_blur">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="75sp"
+            android:padding="16sp"
+            android:layout_marginBottom="20sp"
+            android:background="@null">
+
+            <ImageButton
+                android:id="@+id/share_ig_output_back_button"
+                android:layout_width="48sp"
+                android:layout_height="48sp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:background="@null"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <ImageView
+            android:id="@+id/share_ig_output_image"
+            android:layout_gravity="center"
+            android:layout_width="202.5sp"
+            android:layout_height="360sp"
+            android:scaleType="fitXY"
+            android:src="@drawable/best_rated"/>
+
+        <TextView
+            android:id="@+id/share_ig_output_generate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="傳送至Instagram"
+            android:paddingHorizontal="45sp"
+            android:paddingVertical="5sp"
+            android:textSize="24sp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/themeWhite"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="20sp" />
+
+
+    </LinearLayout>
+</FrameLayout>

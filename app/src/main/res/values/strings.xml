@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Vatis</string>
+    <string name="bio">Hi, my name is Aleks.
+\n\nI love fish.
+\n\nThe kind that is alive and swims around in an aquarium or river, or a lake, and definitely the ocean.
+\nFun fact is that I have several aquariums and also a river.
+\n\nI like eating fish, too. Raw fish. Grilled fish. Smoked fish. Poached fish - not so much.
+\nAnd sometimes I even go fishing.
+\nAnd even less sometimes, I actually catch something.
+\n\nOnce, when I was camping in Canada, and very hungry, I even caught a large salmon with my hands.
+\n\nI\'ll be happy to teach you how to make your own aquarium.
+\nYou should ask someone else about fishing, though.\n\n</string>
+    <string name="what_is_your_nickname">What is your Nickname?</string>
+    <string name="done">Done</string>
+    <string name="yellow_star">Yellow star</string>
+    <string name="name">Aleks Haecky</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+    <string name="password">Password</string>
+    <string name="account">Account</string>
+    <string name="email">Email</string>
+    <string name="password_confirmation">Password Confirmation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid Email</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="user_name">User name</string>
+    <string name="login_successful">Login Successful!</string>
+    <string name="logout">LOGOUT</string>
+    <string name="passport">PASSPORT</string>
+    <string name="profile">Profile</string>
+    <string name="backward">Backward</string>
+    <string name="add_folder">Add Folder</string>
+    <string name="create_folder">Create Folder</string>
+    <string name="folder">Folder</string>
+    <string name="clear">clear</string>
+    <string name="enter_the_folder_name">Enter the Folder Name</string>
+    <string name="title_activity_test">Test</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="plan">PLAN</string>
+    <string name="create_a_new_plan">Create a new plan</string>
+    <string name="delete">Delete</string>
+    <string name="create_a_new_plan_dialog">Create a New Plan</string>
+    <string name="enter_the_plan_name">Enter the plan name</string>
+    <string name="create_plan">Create Plan</string>
+
+    <!-- Strings used for IG style selection -->
+    <string-array name="ig_preferences">
+        <item>簡約</item>
+        <item>進階</item>
+    </string-array>
+
+    <!-- Strings used for IG template selection -->
+    <string-array name="ig_components">
+        <item>所有旅程內容</item>
+        <item>僅包含住宿</item>
+        <item>僅包含景點</item>
+        <item>僅包含餐飲</item>
+    </string-array>
+
+    <!-- Strings used for Journal style selection -->
+    <string-array name="journal_preferences">
+        <item>簡約</item>
+        <item>進階</item>
+    </string-array>
+
+    <!-- Strings used for Journal template selection -->
+    <string-array name="journal_components">
+        <item>所有旅程內容</item>
+        <item>僅包含住宿</item>
+        <item>僅包含景點</item>
+        <item>僅包含餐飲</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.RatingFragment">
+    <ImageButton
+        android:id="@+id/rating_comment_edit_exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250sp"
+        android:layout_marginTop="15sp"
+        android:src="@drawable/ic_baseline_clear_24"
+        android:background="@null"/>
+    <LinearLayout
+        android:layout_width="300sp"
+        android:layout_height="450sp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:layout_marginStart="25sp"
+            android:paddingLeft="12sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry">
+
+            <TextView
+                android:id="@+id/rating_comment_edit_spot_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="spot_1"
+                android:textColor="@color/green"
+                android:textSize="24sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="16sp"
+                android:background="@color/green" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rating_comment_edit_text"
+                android:layout_width="250sp"
+                android:layout_height="250sp"
+                android:textSize="16sp"
+                android:paddingStart="12sp"
+                android:textColor="@color/green"
+                android:maxLines="10"
+                android:text="old content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rating_edit_text_input_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/green"
+                app:boxBackgroundColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/rating_edit_comment_input"
+                    android:inputType="textMultiLine"
+                    android:layout_width="250sp"
+                    android:layout_height="250sp"
+                    android:gravity="start"
+                    android:paddingStart="12sp"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
+                    android:maxLines="10"
+                    android:visibility="invisible"
+                    android:enabled="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/rating_comment_edit_save_button"
+            android:layout_width="245sp"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:layout_margin="20sp"
+            android:backgroundTint="@color/white"
+            app:strokeColor="@color/green"
+            android:textColor="@color/green"
+            app:strokeWidth="1sp"
+            app:cornerRadius="20sp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+
+        android:background="@drawable/rounded_button_login"
+        android:layout_width="300sp"
+        android:layout_height="500sp"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/add_folder_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fui_transparent"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023"
+                tools:layout_conversion_absoluteHeight="0dp"
+                tools:layout_conversion_absoluteWidth="0dp" />
+
+            <TextView
+                android:id="@+id/add_folder_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Add A New Folder"
+                android:textAlignment="center"
+                android:textColor="@color/themeblue"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_folder_toolbar"
+                tools:layout_conversion_absoluteHeight="0dp"
+                tools:layout_conversion_absoluteWidth="0dp" />
+
+            <Button
+                android:id="@+id/add_folder_button"
+                android:layout_width="220sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/add_folder"
+                android:textColor="@color/themeblue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_folder_name_text_input"
+                tools:layout_conversion_absoluteHeight="0dp"
+                tools:layout_conversion_absoluteWidth="300dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_folder_name_text_input"
+                android:layout_width="250sp"
+                android:layout_height="55sp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/text_input_box"
+                android:ellipsize="end"
+                android:enabled="true"
+                android:gravity="center|start"
+                android:hint="@string/enter_the_folder_name"
+                android:inputType="text"
+                android:paddingStart="12sp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/themeblue"
+                android:textColorHint="@color/themeblue"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_folder_text" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>

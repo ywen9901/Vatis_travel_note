@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.RatingFragment"
+    android:background="@drawable/background_blur">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/rating_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="75sp"
+            android:padding="16sp"
+            android:background="@null">
+            <ImageButton
+                android:layout_width="48sp"
+                android:layout_height="48sp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:background="@null"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rating_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_appbar"
+            android:layout_centerHorizontal="true"
+            tools:listitem="@layout/rating_item" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/rating_share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_baseline_share_24"
+        android:backgroundTint="@color/white"
+        android:layout_margin="16dp" />
+
+</FrameLayout>

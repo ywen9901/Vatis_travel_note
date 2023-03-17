@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320sp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:padding="20sp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/rating_image"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:src="@drawable/rating_1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <Button
+                    android:id="@+id/rating_upload_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="圖片上傳"
+                    android:clickable="false"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/rating_cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="取消"
+                    android:clickable="false"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="280sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="20dp">
+
+            <TextView
+                android:id="@+id/rating_spot_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:textSize="22sp"
+                android:maxLines="3"
+                android:maxWidth="170sp"
+                android:layout_weight="0.9"
+                android:text="八卦山下蒸肉圓" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_star_rate_24"/>
+
+                <TextView
+                    android:id="@+id/rating_score_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.0"
+                    android:textSize="20sp"
+                    android:textColor="@color/green"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rating_comment_text"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            android:text="便宜但是料不多\n而且有一點小 吃不飽"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

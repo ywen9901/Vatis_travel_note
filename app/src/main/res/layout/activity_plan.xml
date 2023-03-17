@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/bg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/container">
+
+        <TextView
+            android:id="@+id/plan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="556dp"
+            android:text="@string/plan"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/folder_toolbar"
+            app:layout_constraintVertical_bias="0.056"
+            tools:layout_conversion_absoluteHeight="40dp"
+            tools:layout_conversion_absoluteWidth="411dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/plan_recyclerView"
+            android:layout_width="358dp"
+            android:layout_height="372dp"
+            android:layout_marginBottom="90dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/folder_text" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/delete_plan_fab"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:clickable="true"
+            android:contentDescription="@string/delete"
+            android:outlineProvider="none"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:backgroundTint="@android:color/transparent"
+            app:fabSize="auto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plan_recyclerView"
+            app:layout_constraintVertical_bias="0.529"
+            app:maxImageSize="56dp" />
+
+        <Button
+            android:id="@+id/create_plan_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/text_border"
+            android:fontFamily="@font/roboto"
+            android:text="@string/create_a_new_plan"
+
+            android:textColor="@color/themeWhite"
+            app:layout_constraintBottom_toTopOf="@+id/plan_recyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:maxImageSize="56dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/plan_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fui_transparent"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/plan_delete_text"
+            android:layout_width="110dp"
+            android:layout_height="36dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/delete"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/delete_plan_fab"
+            app:layout_constraintTop_toBottomOf="@+id/plan_recyclerView"
+            app:layout_constraintVertical_bias="0.703" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

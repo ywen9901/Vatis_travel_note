@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ShareIgTemplateFragment"
+    android:background="@drawable/background_blur">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="75sp"
+            android:padding="16sp"
+            android:background="@null">
+
+            <ImageButton
+                android:id="@+id/share_ig_template_back_button"
+                android:layout_width="48sp"
+                android:layout_height="48sp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:background="@null"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="讓 Vatis 幫您快速生成旅遊紀錄"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/share_ig_template_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:listitem="@layout/ig_template_item" />
+
+<!--        <ListView-->
+<!--            android:id="@+id/share_ig_template_list_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:listitem="@layout/ig_template_item" />-->
+
+        <TextView
+            android:id="@+id/share_ig_template_generate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生成"
+            android:paddingHorizontal="80sp"
+            android:paddingVertical="5sp"
+            android:textSize="24sp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/themeWhite"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="20sp" />
+
+        <TextView
+            android:id="@+id/share_ig_template_others_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="或點此選擇其他模板"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</FrameLayout>
